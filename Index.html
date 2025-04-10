@@ -10,23 +10,53 @@
     <h1>Git Introduction</h1>
     <p>Welcome to my first Git file.</p>
     <p>This is a new paragraph added after first commit</p>
+
+    <div>
+        <h1>Blog</h1>
+        <article>
+            <h2>Blog post 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ipsa necessitatibus laborum recusandae saepe sunt id magni, odio quibusdam nobis in cum veritatis. Voluptatem earum quos vel qui maiores. Voluptatum?</p>
+        </article>
+        <article>
+            <h2>Blog post 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus obcaecati quos sed doloribus aperiam est placeat in totam impedit sint ipsa tenetur ducimus, fugit libero necessitatibus molestias. Voluptatibus, impedit.</p>
+        </article>
+        <article>
+            <h2>Blog post 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ea, corrupti aliquid expedita sed rerum nesciunt illum tempore voluptatum placeat aperiam doloribus! Totam a ad quo obcaecati inventore nihil fugit.</p>
+        </article>
+    </div>
     <!-- Git is already aware of this file, but the file is currently Untracked by git
      The folder we want to track with git is called a repository
     A folder that is only accessible through our pc is called a local repository or a local repo, until it is pushed to a live platform of course.
 
     There are three stages we follow in git, they are
-    1. Creation of a new file   (UNTRACKED)
-    2. When the file is being tracked or staged   (MODIFIED)
-    3. When the file has been commited   (INDEX ADDED)
+    1. Creation of a new file   (UNTRACKED) -- U
+    2. When the file is being tracked or staged   (MODIFIED) -- M
+    3. When the file has been commited   (INDEX ADDED) -- I
+
+
+    NOTE THAT A FILE MUST ALREADY BE ADDDED BEFORE IT CAN BE COMMITED
 
 
 
-    SOME GIT COMMANDS
-    1. git init-- initializes git in our folder
-    2. git status-- Tells me the current state of my repo
-    3. git add <A new file> used to add a new file to the local repo for git to be able to keep track
-    4. git add --all used to add all files to the local repo for git to be able to keep track
-    -- is pronounced flag
+    SOME BASIC GIT COMMANDS USED IN DEVELOPMENT 
+    1. git init  \\ initializes git in our folder
+    2. git status  \\ Tells me the current state of my repo
+    3. git add <file name goes here> \\ used to add a new file to the local repo for git to be able to keep track
+    4. git add --all \\ used to add all files to the local repo for git to be able to keep track
+    5. git commit \\ used to commit all files when a milestone has been reached in development 
+    6. git commit -m "<message goes here>" \\ used to add a message to know why the files were commited 
+    7. git log \\ gives us an idea of the commits that we have done in the past 
+    --all is pronounced flag all
     -->
+
+
+    <!-- SOME BASIC GIT COMMANDS USED IN GIT BRANCHING
+     Git branching is employed when a lot of people are working on various parts of a project in development
+     1. git branch \\ used to list out all the branches that already exists in a project
+     2. git branch <branch name goes here> \\ used to create branches and name them with the branch name provided e.g blog, contact, about us... etc 
+     3. git checkout <branch name goes here> \\ used to move to the branch name given
+     4. gitout blo-->
 </body>
 </html>
