@@ -47,14 +47,14 @@
     3. When the file has been commited   (INDEX ADDED) -- I
 
 
-    ***NOTE THAT A FILE MUST ALREADY BE ADDED BEFORE IT CAN BE COMMITED!
+    ***NOTE THAT A FILE MUST ALREADY BE ADDED TO STAGING BEFORE IT CAN BE COMMITED!
 
 
 
     SOME GIT COMMANDS USED IN DEVELOPMENT 
     1. git init  \\ initializes git in our folder
     2. git status  \\ Tells me the current state of my repo Use this to see which files are staged, modified, or untracked.
-    3. git add <file name goes here> \\ used to add a new file to the local repo for git to be able to keep track
+    3. git add <file name goes here> \\ used to add a new file to staging to the local repo for git to be able to keep track
     4. git add --all \\ used to add all files to the local repo for git to be able to keep track
     5. git commit \\ used to commit all files when a milestone has been reached in development 
     6. git commit -m "<message goes here>" \\ used to add a message to know why the files were commited 
@@ -62,6 +62,10 @@
     Note that --all is pronounced flag all
     -->
 
+    <!-- remote repo:
+        The repository on Github
+    local repo:
+        The repository on your local machine -->
 
     <!-- SOME GIT COMMANDS USED IN GIT BRANCHING
     Git branching is employed when a lot of people are working on various parts of a project in development
@@ -85,6 +89,7 @@
     After all files have been added and commited, we can now push our local repo to a remote repo
     1. git remote add origin <url> \\ used to add a remote repository to our local repo
     2. git push  \\ used to push our local commits  to the remote repo
+    2. git push origin/<branch name goes here> \\ used to push our local commits  to the remote repo to a specific branch
     3. git remote -v \\ used to list all the remotes that are connected to our local repo
     4. git pull \\ combination of git fetch and git merge, used to fetch the remote repo to our local repo and merge it with our local repo 
     5. git fetch <name> \\ used to fetch the remote repo to our local repo without merging it with our local repo
