@@ -9,6 +9,20 @@ We can decide to commit the changes that we've made to git
 this is made acheivable using the git commit command
 A message can also be added to the commit using the m flag {-m}
 
+My Personal Github link - Github.com/mechseiko
+
+-----GITHUB TIPS AND TRICKS-----
+
+1. Learn how we work with different types of files when working with github:
+-- env (The environment folder)
+-- node modules folder
+-- .gitignore
+We are advised to add all these files to the .gitignore section when creating a new repository in our github
+we don't want to touch the node modules file at all!
+
+2. We use the <> Code button to refresh the github page and have access to all project files and folders!
+
+My Personal Github link - Github.com/mechseiko
 
 Committing a project to Git is like saving a snapshot of your work. Here’s how you do it:
 
