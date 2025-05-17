@@ -109,8 +109,8 @@
     8. git merge \\ Combines changes from one branch into another.
     -->
 
-    <!-- SOME GIT COMMANDS USED IN GITHUB BRANCHING
-
+    <!--  GITHUB BRANCHING
+    SOME GIT COMMANDS USED IN GITHUB BRANCHING
     Git branching is employed when a lot of people are working on various parts of a project in development
     To create a new branch in github, follow the steps below
     1. Create a new branch in the code <> section on github 
@@ -133,5 +133,24 @@
     8. Ensure there are no merge conflicts
     9. Ensure that the pull request is approved by the team lead
     10. Merge the pull request
+
+
+    GITHUB PAGES
+    Github pages is a free hosting service provided by github to host static websites
+    To create a github repository for github pages
+    YOU CAN ONLY PUBLISH ONE GITHUB PAGE AS A GITHUB USER
+    1. Create the repository in this format <username.github.io></username.github.io>
+    1. Copy the remote URL of the repository
+    2. Open the terminal and navigate to the folder where you want to create the repository
+    3. git init \\ Initialize git in the project folder
+    4. git remote add gh-page <remote-URL goes here>\\ (Note: *gh-page*not*origin*)Add the remote URL to the project
+    5. git add .\\ Add all the files to the staging area
+    6. git commit -m "Initial commit"\\ Commit the changes
+    7. git push gh-page master\\ Push the changes to the remote repository 
+
+    To view what the repository looks like, go to:
+    settings/pages /or go to/ </remote-URL> <username.github.io> in the browser
+    
+    8. You can only publish one github page as a github user
 </body>
 </html>
