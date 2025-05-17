@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Introduction to Git</title>
+    <title>Introduction to Git & Github</title>
 </head>
 <body>
     <h1>Git Introduction</h1>
@@ -17,7 +17,6 @@
         <h1>Blog</h1>
         <article>
             <h2>Blog post 1</h2>
-            <img src="Screenshot (847).png" height="300px" alt="arib">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ipsa necessitatibus laborum recusandae saepe sunt id magni, odio quibusdam nobis in cum veritatis. Voluptatem earum quos vel qui maiores. Voluptatum?</p>
         </article>
         <article>
@@ -27,6 +26,15 @@
         <article>
             <h2>Blog post 3</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ea, corrupti aliquid expedita sed rerum nesciunt illum tempore voluptatum placeat aperiam doloribus! Totam a ad quo obcaecati inventore nihil fugit.</p>
+        </article>
+    </div>
+
+    <div>
+        <h2>Services</h2>
+
+        <article>
+            <h3>Web Development</h3>
+            <p>We develop websites for businesses</p>
         </article>
     </div>
     <!-- Git is already aware of this file, but the file is currently Untracked by git
@@ -43,7 +51,7 @@
 
 
 
-    SOME BASIC GIT COMMANDS USED IN DEVELOPMENT 
+    SOME GIT COMMANDS USED IN DEVELOPMENT 
     1. git init  \\ initializes git in our folder
     2. git status  \\ Tells me the current state of my repo Use this to see which files are staged, modified, or untracked.
     3. git add <file name goes here> \\ used to add a new file to the local repo for git to be able to keep track
@@ -55,7 +63,7 @@
     -->
 
 
-    <!-- SOME BASIC GIT COMMANDS USED IN GIT BRANCHING
+    <!-- SOME GIT COMMANDS USED IN GIT BRANCHING
     Git branching is employed when a lot of people are working on various parts of a project in development
     1. git branch \\ used to list out all the branches that already exists in a project
     2. git branch <branch name goes here> \\ used to create branches and name them with the branch name provided e.g blog, contact, about us... etc 
@@ -69,21 +77,16 @@
     8. git merge <branch name goes here \\ used to merge the current branch we're on to the branch name provided
     9. git branch -d <branch name goes here> \\ used to delete the branch name provided maybe after merging or if it is't needed anymore
     10. q \\ used to exit in a case where commands like git --help or git log are thrown to the terminal
-    Note that in case of a merge conflict which occurs when the two files were trying to merge are not relating really well
-    i.e we merged quick-fix branch to master branch before and then deleted quick-fix branch
-    after which we tried to merge blog, this will cause a merge conflict, to solve this we will be given the following choices
-    1.Accept the current change
-    2.Accept the incoming change
-    3.Accept both changes
-    4.Compare changes
+
 
 
 
     SOME GIT COMMANDS USED WITH GITHUB
-    1. git remote add <name> <url> \\ used to add a remote repository to our local repo
-    2. git remote -v \\ used to list all the remotes that are connected to our local repo
-    3. git push <name> <branch name goes here> \\ used to push our local commits  to the remote repo
-    4. git pull <name> <branch name goes here> \\  
+    After all files have been added and commited, we can now push our local repo to a remote repo
+    1. git remote add origin <url> \\ used to add a remote repository to our local repo
+    2. git push  \\ used to push our local commits  to the remote repo
+    3. git remote -v \\ used to list all the remotes that are connected to our local repo
+    4. git pull \\ combination of git fetch and git merge, used to fetch the remote repo to our local repo and merge it with our local repo 
     5. git fetch <name> \\ used to fetch the remote repo to our local repo without merging it with our local repo
     6. git fetch --all \\ used to fetch all the remote repo to our local repo without merging it with our local repo
     7. git push --set -upstream origin master \\ used to push our local repo to the remote repo and set it as the default remote repo
